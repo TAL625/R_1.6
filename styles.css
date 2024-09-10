@@ -48,6 +48,41 @@ body {
         width: 100px;
         height: auto;
         cursor: pointer;
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Расположите контейнер изображения (необходимо расположить стрелки влево и вправо) */
+        .container {
+          position: relative;
+        }
       }
-     
-    
+      .mySlides {
+        display: none;
+      }
+      /* Вперед и предыдущие кнопки */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Позиция "next кнопка" направо */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}    
